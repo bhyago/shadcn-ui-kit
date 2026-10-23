@@ -1,16 +1,12 @@
 import React from "react";
-import { AppSidebar } from "@/components/admin/app-sidebar"
-import { SiteHeader } from "@/components/admin/site-header"
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/admin/app-sidebar";
+import { SiteHeader } from "@/components/admin/site-header";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 
-
-
-export default function Page({children}: { children: React.ReactNode}) {
+export default function Page({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider
+      className="admin-surface"
       style={
         {
           "--sidebar-width": "calc(var(--spacing) * 72)",
@@ -31,5 +27,5 @@ export default function Page({children}: { children: React.ReactNode}) {
         </div>
       </SidebarInset>
     </SidebarProvider>
-  )
+  );
 }

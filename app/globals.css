@@ -179,6 +179,18 @@
   --tweet-border: 1px solid var(--border) !important;
 }
 
+/* Keep the admin examples at the same compact type scale as the product UI. */
+.admin-surface {
+  --text-xs: 0.6875rem;
+  --text-sm: 0.75rem;
+  --text-base: 0.85rem;
+  --text-lg: 1.05rem;
+  --text-xl: 1.125rem;
+  --text-2xl: 1.25rem;
+  --text-3xl: 1.5rem;
+  font-size: var(--text-base);
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;

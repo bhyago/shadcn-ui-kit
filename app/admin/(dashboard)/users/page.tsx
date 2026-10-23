@@ -20,7 +20,7 @@ export default function Page() {
   return (
     <>
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold tracking-tight">Users</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Users</h1>
         <Button variant="secondary" asChild>
           <Link href="#">
             <CirclePlusIcon /> Add New User

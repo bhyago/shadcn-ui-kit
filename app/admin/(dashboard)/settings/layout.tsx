@@ -13,31 +13,35 @@ export async function generateMetadata(): Promise<Metadata> {
 const sidebarNavItems = [
   {
     title: "Profile",
-    href: "/admin/settings"
+    href: "/admin/settings",
   },
   {
     title: "Account",
-    href: "#"
+    href: "#",
   },
   {
     title: "Appearance",
-    href: "#"
+    href: "#",
   },
   {
     title: "Notifications",
-    href: "#"
+    href: "#",
   },
   {
     title: "Display",
-    href: "#"
-  }
+    href: "#",
+  },
 ];
 
-export default function SettingsLayout({ children }: { children: React.ReactNode }) {
+export default function SettingsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
       <div className="space-y-1 mb-4">
-        <h2 className="text-2xl font-bold tracking-tight">Settings</h2>
+        <h2 className="text-xl font-semibold tracking-tight">Settings</h2>
         <p className="text-muted-foreground">
           Manage your account settings and set e-mail preferences.
         </p>
